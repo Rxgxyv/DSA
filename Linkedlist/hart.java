@@ -1,0 +1,32 @@
+public class hart {
+    public static void main(String[] args) {
+        int n=10;
+        String str="";
+        for(int i = n/2;i<n; i+=2){
+            for(int j = 1;j <n-1; j+=2){
+                str+=" ";
+            }
+            for(int j = 1;j <i+1; j++){
+                str+="*";
+            }
+            for(int j = 1;j <n-i+1; j++){
+                str+=" ";
+            }
+            for(int j = 1;j <i+1; j++){
+                str+="*";
+            }
+            str+="\n";
+        }
+        for(int i = n; i > 0; i--){
+            for(int j = 0; j < n- i;j++){
+                str+=" ";
+            }
+            for(int j = i; j < i*2;j++){
+                str+="*";
+            }
+            str+="\n";
+        }
+        System.out.print(str);
+    }
+    
+}
